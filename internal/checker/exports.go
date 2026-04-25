@@ -178,6 +178,10 @@ func IsTupleType(t *Type) bool {
 	return isTupleType(t)
 }
 
+func (c *Checker) IsArrayType(t *Type) bool {
+	return c.isArrayType(t)
+}
+
 func (c *Checker) GetReturnTypeOfSignature(sig *Signature) *Type {
 	return c.getReturnTypeOfSignature(sig)
 }
